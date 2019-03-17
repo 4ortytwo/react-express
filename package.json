@@ -1,0 +1,22 @@
+{
+  "name": "my-server",
+  "version": "1.0.0",
+  "description": "Boilerplate for React and Express",
+  "main": "server.js",
+  "scripts": {
+    "client-instsall": "cd client && npm install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Arthur Burgan",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
